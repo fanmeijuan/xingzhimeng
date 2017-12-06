@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0;">
+    <title>行之梦</title>
+    <meta name="keywords" content="教育，培训">
+    <meta name="description" content="行之梦">
+
+
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/cssbg.css">
+    <link rel="stylesheet" href="css/tabulous.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jq22.css">
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/iestyle.css">
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js "></script>
+
+    <script src="js/jq22.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/tabulous.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(function(){
+
+            $('.sb-lb').fullpage({
+                scrollingSpeed:500,
+                easing:"swing",
+                navigation: true,
+            });
+            //如果屏幕小于1024px，删除轮播动作，释放滚动条
+            function autoScrolling(){
+                var $ww = $(window).width();
+                if($ww <  1120){
+                    $.fn.fullpage.setAutoScrolling(false);
+                } else {
+                    $.fn.fullpage.setAutoScrolling(true);
+                }
+            }
+            autoScrolling();
+           
+            (function(){
+                $('.sy-banner').slick({
+                    dots:true,
+                    autoplay:true,
+                    autoplaySpeed:8000,
+                    slidesToShow:1,
+                    slidesToScroll:1,
+                    speed:1200
+                });
+                $('.sy-pro-l').owlCarousel({
+                    items:1,
+                    itemsDesktop:false,
+                    itemsDesktopSmall:false,
+                    itemsTablet:false,
+                    rewindNav:false,
+                    navigation:true,
+                    navigationText:["",""],
+                    pagination:false
+                });
+                $('.mb_zs').owlCarousel({
+                    items:1,
+                    autoHeight:true,
+                    itemsDesktop:false,
+                    itemsDesktopSmall:false,
+                    itemsTablet:false,
+                    rewindNav:false,
+                    navigation:true,
+                    navigationText:["",""],
+                    pagination:false
+                });
+                $('.media-nav-bn').click(function(){
+                    $('.navbar-nav').toggle()
+                });
+                $('.mb-album-nr').owlCarousel({
+                    items:1,autoHeight:true,
+                    itemsDesktop:false,
+                    itemsDesktopSmall:false,
+                    itemsTablet:false,
+                    rewindNav:false,
+                    pagination:false
+                });
+
+                $('.mF_tab').tabulous({
+                    effect: 'scaleUp'
+                });
+
+
+            });
+            $(function(){
+
+                $('.int-jj-p').owlCarousel({
+                    items:5,
+                    itemsDesktop:false,
+                    itemsDesktopSmall:false,
+                    itemsTablet:false,
+                    pagination:false,
+                    rewindNav:false,
+                    navigation:true,
+                    navigationText:["&lt;","&gt;"],
+                    autoPlay: 3000,
+                });
+                $('.media-nav-bn').click(function(){
+                    $('.navbar-nav').toggle()
+                });
+                $(window).scroll(function(event) {
+                    var top = $(window).scrollTop();
+                    if (top > 1450) {
+                        $(".int-wh-nr").addClass("qywhan");
+                    }
+                });
+            });
+            })
+
+
+    </script>
+
+</head>
+<body>
+<!--导航-->
+<div class="header sy-head sy-lb-head" id="head" >
+    <div id='cssmenu' style='margin:0 auto;'  >
+        <ul style='display: block;'>
+            <li>
+                <a href='index.html' >首页 <br/>
+                <span>Home</span>
+            </a></li>
+            <li class='active has-sub '>
+                <a href='#' >关于我们<br/>
+                    <span>About us</span>
+            </a>
+                <ul class='helo ' style='display: none;'>
+                    <li style='margin-top:16px;'class='has-sub'><a href='intro.html' >公司简介</a>
+                    <li><a href='#' >企业文化</a></li>
+                    <li><a href='# '>企业使命</a></li>
+                    <li><a href='#' >服务理念</a></li>
+                    <li><a href='#' >教育理念</a></li>
+                </ul>
+        </li>
+
+        <li class='has-sub'><a href='#' >新闻中心<br/>
+            <span>News</span>
+
+        </a>
+            <ul class='helo'>
+                <li style='margin-top:16px;'><a href='#' >公司新闻</a></li>
+                <li><a href='# '>行业动态</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href='theTrip.html' >文旅地产项目
+            <br/>
+            <span>The trip</span>
+
+        </a></li>
+
+        <li>
+            <a href='ResearchStudy.html' >研学旅行教育<br/>
+            <span>Research  study</span>
+        </a>
+        </li>
+        <li>
+            <a href='Cultural.html' >中外文化交流<br/>
+            <span>Cultural exchange</span></a>
+        </li>
+        <li>
+            <a href='teamwork.html' >合作案例
+                <br/>
+                <span>Acooperation</span>
+            </a>
+        </li>
+        <li>
+            <a href='tell_us.html' >联系我们
+                <br/>
+                <span>Contcat us</span>
+
+            </a>
+        </li>
+
+        </ul>
+
+    </div>
+</div>
+
+<div class="sb-lb">
+    <!----- 第一屏 ---------->
+    <div class="section section1 banner-box">
+        <div class=" banner sy-banner">
+
+        </div>
+    </div>
+    <!--------- 第二屏 ---------->
+    <div class="section section2 sy-xm-box about_us">
+        <div class="sy-box-top " >
+            <div class="sy-coop" >
+            <div class="title " >
+                <div class="topreq" style=''></div>
+                <a href="##">关于我们</a> <br/>
+                <span>About us</span>
+                <div class="bottomreq" style=''></div>
+            </div>
+            </div>
+        </div>
+        <div class="sy-main-xm about_text">
+            <p>陕西行知梦教育科技有限公司成立于2017 年8月，是一家集文旅地产，网络新媒体、礼仪庆典，广告招商，代理、营销策划、中外文化交流、研学旅行教育，国内修学、国际游学、亲子教育教育培训为一体的公司。
+                公司自成立以来，致力于对中国传统文化的传播与交流，以与时俱进的理念，强大的网络平台、专业的制作团队、秉承习近平总书记提出的：“坚定文化自信，推动社会主义文化繁荣兴盛”的理念，竭力打造中国传统文化新形象，传播中国传统文化新理念，留住传统文化的根。
+            </p>
+
+            <div class="sy-main-xm-r">
+              <div class="line-about"></div>
+                <div class="intro intr">
+                    <a href="##"></a><br/>
+                    <span>公司简介</span>
+                </div>
+                <div class="intro instruct">
+                    <a href="##"></a><br/>
+                    <span>企业文化</span>
+                </div>
+                <div class="intro shiming">
+                    <a href="##"></a><br/>
+                    <span>服务使命</span>
+                </div>
+                <div class="intro ser">
+                    <a href="##"></a><br/>
+                    <span>服务理念</span>
+                </div>
+                <div class="intro ed">
+                    <a href="##"></a><br/>
+                    <span>教育理念</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!--------- 第三屏 ---------->
+    <div class="section section3 news" style='margin-bottom:30px;' >
+        <div class="sy-box-top " >
+            <div class="sy-coop" >
+                <div class="title" >
+                    <div class="topreq" style=''></div>
+                    <a href="##">新闻动态</a> <br/>
+                    <span>News</span>
+                    <div class="bottomreq" style=''></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news_content sy-main-xm">
+            <div class="line_circle">
+                <div class="date1"><a href="##">2017-11-9</a></div>
+                <div class="date2"><a href="##">2017-11-9</a></div>
+                <div class="date3"><a href="##">2017-11-9</a></div>
+
+                <div class="red_circle1"></div>
+                <div class="red_circle2"></div>
+                <div class="red_circle3"></div>
+            </div>
+            <div class="news_img">
+                <a href="##" ><img src="img/news_1.png" alt=""/></a>
+            </div>
+            <div class="news_text">
+                <a href="##" style='font-size: 16px;font-weight: bold;'>永兴坊荣膺2017年“陕建杯”最受百姓喜爱品牌！</a>
+                <p style='text-indent: 2em;'>
+                    11月9日上午，由陕西省质量强省工作推进委员会主办的年度质量压轴“大戏”——2017年度 “陕建杯”三秦质量之光颁奖典礼在陕西广电大剧院隆重举行。陕西省人大副主任李晓东，陕西省质量强省工作推进委员会主任、省政府副省长魏增军，陕西省政协副主席李小东等领导出席此次活动！西安永兴坊文化发展有限公司受邀参加此次颁奖盛典，其运营的“永兴坊•陕西非遗美食文化街区”荣获2017年度“陕建杯”三秦质量之光——“最受百姓喜爱的品牌”荣誉称号。永兴坊荣膺2017年“陕建杯”最受百姓喜爱品牌！
+                </p>
+                <div class="more" style='position: absolute;'>
+                    <a href="##"> < <img src="img/more.png" alt="" style='vertical-align: middle;'/> > </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--------- 第四屏 ---------->
+    <div class="section section4 research" >
+        <div class="sy-box-top " >
+            <div class="sy-coop" >
+                <div class="title tittle_yangxue" >
+                    <div class="topreq" style=''></div>
+                    <a href="##">研学旅行教育</a> <br/>
+                    <span >Research  study</span>
+                    <div class="bottomreq" style=''></div>
+                </div>
+            </div>
+        </div>
+        <div class="sy-main-xm">
+        <div class="yanxue">
+            <div class="yanxue_l">
+                <div class="yanxue_img">
+                <span style='display: inline-block;width: 4px;height: 18px;background-color: #C1191D;'></span>
+                <a href="##">研学旅行 <br/>
+                    <span style='font-weight: 100;font-size: 12px;'>Research study</span>
+                </a> <br/>
+                <p >
+                    研学旅游能增强进人与人之间的交流，而研学旅行恰恰另辟蹊径，在游历中“感受祖国大好河山，感受中华传统美德，感受革命光荣历史，感受改革开放伟大成就，通过以身體变化影响心理变化，以心理不断趋于成熟促进正确的世界观、人生观、价值观的形成。读万卷书，行万里路，（陶行知语）游学思想由来已久，研学旅行政策也是一以贯之。为此，我们要重视研学旅行的重要意义，树立学、思、游相互促进的观念，走出从“学校到学校”、从“工作到工作”的封闭圈，不断地拓展教育的边界，引领学生走出学校教室，走向更为广阔的天地，在真实的情境之中体验、合作、探究，真正形成适应未来社会发展的必备品格和关键能力。
+                    研学旅游能增强进人与人之间的交流，而研学旅行恰恰另辟蹊径，在游历中“感受祖国大好河山，感受中华传统美德，感受革命光荣历史，感受改革开放伟大成就，通过以身體变化影响心理变化，以心理不断趋于成熟促进正确的世界观、人生观、价值观的形成。读万卷书，行万里路，（陶行知语）游学思想由来已久，研学旅行政策也是一以贯之。为此，我们要重视研学旅行的重要意义，树立学、思、游相互促进的观念，走出从“学校到学校”、从“工作到工作”的封闭圈，不断地拓展教育的边界，引领学生走出学校教室，走向更为广阔的天地，在真实的情境之中体验、合作、探究，真正形成适应未来社会发展的必备品格和关键能力。
+                    研学旅游能增强进人与人之间的交流，而研学旅行恰恰另辟蹊径，在游历中“感受祖国大好河山，感受中华传统美德，感受革命光荣历史，感受改革开放伟大成就，通过以身體变化影响心理变化，以心理不断趋于成熟促进正确的世界观、人生观、价值观的形成。读万卷书，行万里路，（陶行知语）游学思想由来已久，研学旅行政策也是一以贯之。为此，我们要重视研学旅行的重要意义，树立学、思、游相互促进的观念，走出从“学校到学校”、从“工作到工作”的封闭圈，不断地拓展教育的边界，引领学生走出学校教室，走向更为广阔的天地，在真实的情境之中体验、合作、探究，真正形成适应未来社会发展的必备品格和关键能力。
+
+                </p>
+            </div>
+            </div>
+            <div class="yanxue_r" >
+                <a href=""> <img src="img/tupian_01.png" alt=""/></a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <!--------  第五屏  ----------->
+    <div class="section section5 sy-album cultural" >
+        <div class="sy-box-top " style='padding-top:80px;' >
+            <div class="sy-coop" >
+                <div class="title" >
+                    <div class="topreq" style=''></div>
+                    <a href="##">中外文化交流</a> <br/>
+                    <span>Cultural exchange</span>
+                    <div class="bottomreq" style=''></div>
+                </div>
+            </div>
+        </div>
+        <div class="sy-jy">
+            <ul class="sy-jy-nr">
+                <li><a href="##">
+                    <img class="j1" src="img/2_02.png">
+                    <img class="j2" src="img/2_01.png">
+                    <div class="sy-jy-nr-t"><p>艺术设计</p></div>
+                </a></li>
+                <li><a href="##">
+                    <img class="j1" src="img/2_04.png">
+                    <img class="j2" src="img/2_03.png">
+                    <div class="sy-jy-nr-t"><p>教育培训</p></div>
+                </a></li>
+                <li><a href="##">
+                    <img class="j1" src="img/2_06.png">
+                    <img class="j2" src="img/2_05.png">
+                    <div class="sy-jy-nr-t"><p>休闲度假</p></div>
+                </a></li>
+                <li><a href="##">
+                    <img class="j1" src="img/2_08.png">
+                    <img class="j2" src="img/2_07.png">
+                    <div class="sy-jy-nr-t"><p>商贸会展</p></div>
+                </a></li>
+                <li><a href="##">
+                    <img class="j1" src="img/2_10.png">
+                    <img class="j2" src="img/2_09.png">
+                    <div class="sy-jy-nr-t"><p>医疗保健</p></div>
+                </a></li>
+                <li><a href="##">
+                    <img class="j1" src="img/2_12.png">
+                    <img class="j2" src="img/2_11.png">
+                    <div class="sy-jy-nr-t"><p>养老养生</p></div>
+                </a></li>
+
+
+
+            </ul>
+            <p class='sy-jy-nr cultural_p'style=''>热爱中国传统文化，提升民众精神素养，要么读书，要么旅行，人的身体和灵魂，总得有一个在路上。</p>
+            <div class="more cultural_more" style='position: absolute;'>
+                <a href="##"> < <img src="img/more.png" alt="" style='vertical-align: middle;'/> > </a>
+            </div>
+        </div>
+    </div>
+    <!--------  第刘屏  ----------->
+    <div class="section section6 trip" style='margin-top:30px;background-color: #F5F5F5;'>
+        <div class="sy-box-top "  >
+            <div class="sy-coop" >
+                <div class="title cultural_title"  >
+                    <div class="topreq" style=''></div>
+                    <a href="##">文旅地产项目</a> <br/>
+                    <span>The trip</span>
+                    <div class="bottomreq" style=''></div>
+                </div>
+            </div>
+        </div>
+        <div class="sy-pro-box"><!-------   第四屏内容使用盒子封装 ----->
+            <!--<div class="mb_zs">
+                <a href="##"><img src="img/tupian_01.png" ><span>医疗保健产业</span></a>
+                <a href="##"><img src="images/20160614040502676.jpg" ><span>养老养生产业</span></a>
+                <a href="##"><img src="images/20160614040452712.jpg" ><span>教育培训产业</span></a>
+                <a href="##"><img src="images/20160614040441952.jpg" ><span>基础建设产业</span></a>
+            </div>-->
+            <div class="sy-pro-l">
+                <div>
+                    <ul class="sy-pro-lul">
+                        <li><a href="##"><img src="img/tupian_01.png" ><span>基础建设</span><i></i></a></li>
+                        <li><a href="##"><img src="img/dicahn_1.png" ><span>教育培训</span><i></i></a></li>
+                        <li><a href="##"><img src="img/dichan_2.png" ><span>养老养生</span><i></i></a></li>
+                        <li><a href="##"><img src="images/20160330081941372.jpg" ><span>医疗保健</span><i></i></a></li>
+                        <li><a href="##"><img src="images/20160330081941372.jpg" ><span>医疗保健</span><i></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sy-pro-r">
+                <a href="##"><img src="img/tupian_01.png" alt=""></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!--------  第七屏  ----------->
+
+
+<div class="section section7">
+    <div class="sy-box-top "  >
+        <div class="sy-coop" >
+            <div class="title cultural_title"  >
+                <div class="topreq" style=''></div>
+                <a href="##">合作伙伴</a> <br/>
+                <span>pertaner</span>
+                <div class="bottomreq" style=''></div>
+            </div>
+        </div>
+    </div>
+    <div class="int-main int-jj con_mob" id="jtjs">
+
+        <ul class="int-jj-p int-jj-box">
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="1"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="3"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="4"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="5"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="6"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="0"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="0"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="0"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="0"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="0"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/tupian_01.png" alt="0"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="0"></a></li>
+            <li><a  href="javascript;;"   ><img src="img/partner_01.png" alt="0"></a></li>
+        </ul>
+        <a href="##" class="int-jj-bn more-bn">&nbsp;&nbsp;更多 >></a>
+    </div>
+
+    <div class=" footer jianjie-footer con_mob1  sy-footer">
+        <div class="ny-foot">
+            <div class="foot-left">
+                <p>陕西行之梦教育科技有限公司</p>
+                <p>公司地址：西安市曲江新区金凤路838号（曲江369互联网创新创业基地）<br/>
+                    公司域名：www.shanxixzm.com  &nbsp;公司邮箱：xingzhimeng99@126.com <br/>
+                    联系电话： 李先生18629264836 17791542756
+                </p>
+
+                <div class="clear"></div>
+            </div>
+            <ul class="erweima ">
+                <li><img src="img/ewm_mobile_service.png"> <p>公司服务号</p></li>
+                <li><img src="img/ewm_mobile_diingyue.png"> <p>公司订阅号</p></li>
+                <li><img src="img/ewm_mobile_geren.png"> <p>个人微信号</p></li>
+                <li><img src="img/ewm_mobile_geren2.png"> <p>个人微信号</p></li>
+
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+        <div class="copyright">
+            <p><a href="##">文旅地产项目 </a> | <a href="##">研学旅行教育</a> | <a href="##">中外文化交流</a> | <a href="##" >在线留言</a>|<a href="##" >在线地图</a></p>
+        </div>
+        <div class="sy-an"><a class="backtop" id="re_top">TOP</a>
+            <script>
+                $(function(){
+                    $("#re_top").click(function(){
+                        $("#fullPage-nav").find("a").eq(0).trigger("click");
+                    });
+                    $("#re_top").click(function(){
+                        $('body,html').animate({scrollTop:0},1000);
+                        return false;
+                    });
+                })
+            </script>
+        </div>
+    </div>
+</div>
+<!--移动端-->
+
+    <script>
+        if($(window).width()>768){
+            $(".yanxue_r a ").hover(function(){
+                $(".yanxue_r a >img").stop(this).animate({height:"450px",width:"360px",boxShadow: "0 0 6px rgba(0,0,0,.6)"},200).animate({height:"400px",width:"334px",boxShadow: "0 0 6px rgba(0,0,0,.6)"},200);
+
+            },function(){
+
+            })
+        }
+
+    </script>
+</body>
+</html>
+
+
+

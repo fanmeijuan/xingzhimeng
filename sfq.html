@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        html,body {
+            overflow:hidden;
+        }
+        #prew {
+            position:relative;
+            width:100%;
+            height:329px;
+            margin-left:-4px;
+            margin-top:40px;
+        }
+        #prew ul.list {
+            width:100%;
+            height:100%;
+        }
+        #prew ul.list li {
+            float:left;
+            position:relative;
+            width:80px;
+            height:100%;
+            border-left:1px solid #888;
+            overflow:hidden;
+        }
+        #prew ul.list li:nth-child(1) {
+            border-left:none;
+        }
+        #prew ul.list li.on {
+            width:100;
+            height:100%;
+        }
+        #prew ul.list li>img {
+            position:absolute;
+            left:0px;
+            top:0px;
+        }
+        #prew ul.list li>div {
+            position:relative;
+            width:80px;
+            height:100%;
+            z-index:9;
+            background-color:rgba(0,0,0,.3);
+        }
+        #prew ul.list li>div>p {
+            position:absolute;
+            width:40px;
+            height:350px;
+            left:20px;
+            top:39px;
+            font-size:26px;
+            color:#fff;
+            text-align:center;
+            line-height:35px;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <h3> 手风琴 </h3>
+    <div id="prew">
+        <ul class="list">
+            <li>
+                <div>
+                    <p> 美丽的西藏布达拉宫 </p>
+                </div>
+                <img src="http://www.jq22.com/img/cs/500x300.png"> </li>
+            <li>
+                <div>
+                    <p> 美丽的西藏布达拉宫 </p>
+                </div>
+                <img src="img/06.png"> </li>
+            <li class="on">
+                <div>
+                    <p> 美丽的西藏布达拉宫 </p>
+                </div>
+                <img src="http://www.jq22.com/img/cs/500x300.png"></li>
+            <li>
+                <div>
+                    <p> 美丽的西藏布达拉宫 </p>
+                </div>
+                <img src="http://www.jq22.com/img/cs/500x300.png"></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<div class="footer jianjie-footer  sy-footer">
+    <div class="ny-foot">
+        <div class="foot-left">
+            <p>陕西行之梦教育科技有限公司</p>
+            <p>公司地址：西安市曲江新区金凤路838号（曲江369互联网创新创业基地）<br/>
+                公司域名：www.shanxixzm.com  &nbsp;公司邮箱：xingzhimeng99@126.com <br/>
+                联系电话： 李先生18629264836 17791542756
+            </p>
+
+            <div class="clear"></div>
+        </div>
+        <ul class="erweima">
+            <li><img src="img/ewm1.jpg"> <p>项目公众号</p></li>
+            <li><img src="img/ewm2.jpg"> <p>企业服务号</p></li>
+
+        </ul>
+        <ul class="erweima1" >
+            <li><img src="img/ewm_mobile_service.png"> <p>公司服务号</p></li>
+            <li><img src="img/ewm_mobile_diingyue.png"> <p>公司订阅号</p></li>
+            <li><img src="img/ewm_mobile_geren.png"> <p>个人微信号</p></li>
+            <li><img src="img/ewm_mobile_geren2.png"> <p>个人微信号</p></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div class="copyright">
+        <p><a href="##">文旅地产项目 </a> | <a href="##">研学旅行教育</a> | <a href="##">中外文化交流</a> | <a href="##" >在线留言</a>|<a href="##" >在线地图</a></p>
+    </div>
+    <div class="sy-an"><a class="backtop" id="re_top">TOP</a>
+        <script>
+            $(function(){
+                $("#re_top").click(function(){
+                    $("#fullPage-nav").find("a").eq(0).trigger("click");
+                });
+                $("#re_top").click(function(){
+                    $('body,html').animate({scrollTop:0},1000);
+                    return false;
+                });
+            })
+        </script>
+    </div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    (function() {
+        listDiv = $('#prew ul.list li>div');
+        listLi = $('#prew ul.list li');
+        listDiv.hover(function() {
+            $(this).parent().stop(true).animate({
+                        width: 500
+                    },
+                    300).siblings('li').stop(true).animate({
+                        width: 80
+                    },
+                    300);
+        });
+    })();
+</script>
+</body>
+</html>
